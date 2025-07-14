@@ -1,0 +1,57 @@
+[
+    {
+      "id": "paso-1",
+      "titulo": "Paso 1",
+      "img": "/img/monocai.jpg",
+      "texto": "Napoleón invade España y el rey Fernando VII es derrocado."
+    },
+    {
+      "id": "paso-2",
+      "titulo": "Paso 2",
+      "img": "https://via.placeholder.com/300x200",
+      "texto": "En Buenos Aires surgen dudas sobre la autoridad del virrey."
+    },
+    {
+      "id": "paso-3",
+      "titulo": "Paso 3",
+      "img": "https://via.placeholder.com/300x200",
+      "texto": "El 22 de mayo de 1810 se realiza un Cabildo Abierto."
+    },
+    {
+      "id": "paso-4",
+      "titulo": "Paso 4",
+      "img": "https://via.placeholder.com/300x200",
+      "texto": "Se discute si el virrey Cisneros debe continuar en el poder."
+    },
+    {
+      "id": "paso-5",
+      "titulo": "Paso 5",
+      "img": "https://via.placeholder.com/300x200",
+      "texto": "El 24 de mayo se forma una junta con el virrey, pero es rechazada."
+    },
+    {
+      "id": "paso-6",
+      "titulo": "Paso 6",
+      "img": "https://via.placeholder.com/300x200",
+      "texto": "El 25 de mayo se exige la renuncia de Cisneros."
+    },
+    {
+      "id": "paso-7",
+      "titulo": "Paso 7",
+      "img": "https://via.placeholder.com/300x200",
+      "texto": "Se forma la Primera Junta de Gobierno con Saavedra a la cabeza."
+    },
+    {
+      "id": "paso-8",
+      "titulo": "Paso 8",
+      "img": "https://via.placeholder.com/300x200",
+      "texto": "Comienza la lucha por la independencia de España."
+    },
+    {
+      "id": "paso-9",
+      "titulo": "Paso 9",
+      "img": "https://via.placeholder.com/300x200",
+      "texto": "La Revolución se extiende a otras ciudades del Virreinato."
+    }
+  ]
+  

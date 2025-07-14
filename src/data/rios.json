@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "title": "Río Paraná",
+    "description": "El río Paraná es el segundo más largo de Sudamérica y atraviesa Argentina, Paraguay y Brasil.",
+    "image": "/img/img-geografia/rio-parana.webp"
+
+  },
+  {
+    "id": 2,
+    "title": "Río de la Plata",
+    "description": "Formado por la unión de los ríos Paraná y Uruguay, es un estuario importante para la navegación.",
+    "image": "/img/img-geografia/rio-plata.webp"
+
+  },
+  {
+    "id": 3,
+    "title": "Río Uruguay",
+    "description": "El río Uruguay forma frontera natural entre Argentina y Uruguay, siendo esencial para la región.",
+    "image": "/img/img-geografia/rio-uruguay.webp"
+
+  },
+  {
+    "id": 4,
+    "title": "Río Pilcomayo",
+    "description": "Nace en Bolivia y atraviesa el norte argentino, desembocando en el río Paraguay.",
+    "image": "/img/img-geografia/rio-pilcomayo.webp"
+  },
+  {
+    "id": 5,
+    "title": "Río Colorado",
+    "description": "Río importante que recorre la región patagónica hacia el océano Atlántico.",
+    "image": "/img/img-geografia/rio-colorado.webp"
+
+  },
+  {
+    "id": 6,
+    "title": "Río Salado",
+    "description": "Atraviesa varias provincias argentinas y es clave para la agricultura regional.",
+    "image": "/img/img-geografia/rio-salado.webp"
+
+  },
+  {
+    "id": 7,
+    "title": "Río Bermejo",
+    "description": "Río que nace en Bolivia y desemboca en el río Paraguay, con gran importancia ecológica.",
+    "image": "/img/img-geografia/rio-bermejo.webp"
+
+  },
+  {
+    "id": 8,
+    "title": "Río Mendoza",
+    "description": "Fundamental para el riego en la región de Cuyo y origen en la Cordillera de los Andes.",
+    "image": "/img/img-geografia/rio-mendoza.webp"
+
+  }
+]

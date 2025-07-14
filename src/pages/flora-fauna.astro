@@ -1,0 +1,14 @@
+---
+import Layout from '@layouts/Layout.astro';
+import GridNatural from '@components/GridNatural.astro';
+import Flora from '@data/flora-fauna.json';
+---
+
+<Layout>
+  <GridNatural
+    title="Flora Argentina"
+    items={Flora}
+    bodyBgColor="#9f5431"
+    cardBgColor="#8a3f1c" 
+  />
+</Layout>

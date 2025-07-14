@@ -1,0 +1,11 @@
+---
+import GridSocial from '@components/GridSocial.astro';
+import cultura from '@data/cultura.json' assert { type: 'json' };
+import Layout from '@layouts/Layout.astro';
+
+const bgColor = '#8b0000';
+---
+
+<Layout>
+   <GridSocial items={cultura} title="Cultura y Sociedad" bgColor={bgColor} />
+</Layout>

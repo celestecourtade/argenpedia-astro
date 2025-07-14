@@ -1,0 +1,38 @@
+[
+    {
+      "id": 1,
+      "title": "🌲 Parque Nacional Los Glaciares",
+      "text": "Ubicado en la Patagonia, famoso por el imponente glaciar Perito Moreno y montañas nevadas.",
+      "image": "/img/img-naturales/glaciares.webp"
+
+    },
+    {
+      "id": 2,
+      "title": "🌿 Parque Nacional Iguazú",
+      "text": "En Misiones, hogar de las famosas Cataratas del Iguazú, una de las maravillas naturales del mundo.",
+      "image": "/img/img-naturales/iguazu.webp"
+
+    },
+    {
+      "id": 3,
+      "title": "🏞️ Parque Nacional Nahuel Huapi",
+      "text": "El primero creado en Argentina, con lagos, bosques y montañas en la región de Bariloche.",
+      "image": "/img/img-naturales/nahuel-huapi.webp"
+
+    },
+    {
+      "id": 4,
+      "title": "🌄 Parque Nacional Talampaya",
+      "text": "En La Rioja, con impresionantes formaciones rocosas y sitios arqueológicos precolombinos.",
+      "image": "/img/img-naturales/talampaya.webp"
+
+    },
+    {
+      "id": 5,
+      "title": "🌵 Parque Nacional El Palmar",
+      "text": "En Entre Ríos, destaca por su gran extensión de palmares y fauna autóctona.",
+      "image": "/img/img-naturales/palmar.webp"
+
+    }
+  ]
+  

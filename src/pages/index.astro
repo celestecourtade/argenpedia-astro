@@ -1,11 +1,120 @@
+se me hizo un marggen blanco abajo de los iconos
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from '@layouts/Layout.astro';
 ---
 
 <Layout>
-	<Welcome />
+  <main class="home" id="home">
+    <h1 class="home__title">¡Bienvenido a Argenpedia!</h1>
+    <p class="home__subtitle">¿Qué quieres aprender hoy?</p>
+
+    <nav class="menu" id="menu" aria-label="Menú de categorías" hidden>
+      <a href="/category/geography" title="Geografía">
+        <span class="emoji" aria-hidden="true">🌍</span>
+        Geografía
+      </a>
+      <a href="/category/history" title="Historia alternativa">
+        <span class="emoji" aria-hidden="true">📚</span>
+        Historia
+      </a>
+      <a href="/category/natural_sciences" title="Ciencias Naturales">
+        <span class="emoji" aria-hidden="true">🔬</span>
+        Ciencias Naturales
+      </a>
+      <a href="/category/social_sciences" title="Ciencias Sociales">
+        <span class="emoji" aria-hidden="true">👥</span>
+        Ciencias Sociales
+      </a>
+    </nav>
+  </main>
+
+  <style>
+    .home {
+      text-align: center;
+      background-image: url('/img/background (2).jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      font-family: 'Fredoka', cursive, sans-serif;
+      box-sizing: border-box;
+      position: relative;
+      overflow-y: hidden;
+      min-height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .home__title {
+      font-size: 3rem;
+      color: #eaeaee;
+      margin-bottom: 0.5rem;
+      text-shadow: 1px 1px 3px #ffffffaa;
+    }
+
+    .home__subtitle {
+      font-size: 1.6rem;
+      color: #f0f0f0;
+      margin-bottom: 2rem;
+    }
+
+    .menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 1rem 2rem;
+}
+
+.menu a {
+  flex: 1 1 calc(50% - 20px); /* 2 por fila en pantallas medianas */
+  max-width: 180px;
+  min-width: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #edff00;
+  border-radius: 12px;
+  padding: 20px;
+  text-decoration: none;
+  color: #333;
+  font-size: 1.1rem;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 0.1);
+  cursor: pointer;
+  user-select: none;
+}
+
+.menu a span.emoji {
+  font-size: 2.8rem;
+  margin-bottom: 8px;
+}
+
+
+    .menu a span.emoji {
+      font-size: 2.8rem;
+      margin-bottom: 8px;
+    }
+
+    .menu a:hover,
+    .menu a:focus {
+      background: #d0e7ff;
+      transform: scale(1.05);
+      color: #0077cc;
+      box-shadow: 0 4px 10px rgb(0 119 204 / 0.3);
+      outline: none;
+    }
+
+    /* Responsive para pantallas chicas (1 por fila) */
+@media (max-width: 480px) {
+  .menu a {
+    flex: 1 1 100%;
+    max-width: none;
+  }
+}
+  </style>
+
 </Layout>

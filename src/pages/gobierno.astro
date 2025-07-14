@@ -1,0 +1,11 @@
+---
+import Layout from '@layouts/Layout.astro';
+import GridSocial from '@components/GridSocial.astro';
+import gobierno from '@data/gobierno.json' assert { type: 'json' };
+
+
+const bgColor = '#4169e1';
+---
+<Layout>
+    <GridSocial items={gobierno} title="Gobierno y Política" bgColor={bgColor} />
+</Layout>

@@ -1,0 +1,16 @@
+---
+import GaleriaInfo from '@components/GaleriaInfo.astro';
+import rios from '@data/rios.json';
+import Layout from '@layouts/Layout.astro';
+---
+
+
+<Layout>
+  <GaleriaInfo
+    title="Ríos de Argentina"
+    items={rios}
+    color="#ffff"
+    bgColor="#6eb4ff"
+    cardColor="#4169e1"
+  />
+</Layout>

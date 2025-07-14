@@ -1,0 +1,60 @@
+[
+    {
+      "id": 1,
+      "title": "Aconcagua",
+      "description": "Con 6,959 metros, es la montaña más alta de América y un icono de los Andes argentinos.",
+      "image": "/img/img-geografia/aconcagua.webp"
+
+
+    },
+    {
+      "id": 2,
+      "title": "Cerro Fitz Roy",
+      "description": "Ubicado en la Patagonia, famoso por sus picos escarpados y belleza natural única.",
+      "image": "/img/img-geografia/fitz.webp"
+
+    },
+    {
+      "id": 3,
+      "title": "Cerro Tronador",
+      "description": "Montaña volcánica con glaciares ubicada en la frontera entre Argentina y Chile.",
+      "image": "/img/img-geografia/cerro-tronador.webp"
+
+    },
+    {
+      "id": 4,
+      "title": "Cerro Catedral",
+      "description": "Montaña cercana a Bariloche, famosa por su estación de esquí.",
+      "image": "/img/img-geografia/cerro-catedral.webp"
+
+    },
+    {
+      "id": 5,
+      "title": "Cerro Bonete",
+      "description": "Una de las cumbres más altas de la Puna argentina.",
+      "image": "/img/img-geografia/cerro-bonete.webp"
+
+    },
+    {
+      "id": 6,
+      "title": "Cerro Mercedario",
+      "description": "Segunda montaña más alta de Argentina, ubicada en la provincia de San Juan.",
+      "image": "/img/img-geografia/cerro-mercedario.webp"
+
+    },
+    {
+      "id": 7,
+      "title": "Cerro Champaquí",
+      "description": "Pico más alto de la provincia de Córdoba y atractivo turístico.",
+      "image": "/img/img-geografia/cerro-champaqui.webp"
+
+    },
+    {
+      "id": 8,
+      "title": "Cerro Pissis",
+      "description": "Volcán y una de las montañas más altas de la Puna argentina.",
+      "image": "/img/img-geografia/cerro-pissis.webp"
+
+    }
+  ]
+  

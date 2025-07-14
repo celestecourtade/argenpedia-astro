@@ -1,22 +1,85 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
-</html>
+---
+import Navbar from '@components/Navbar.astro';
+import Footer from '@components/Footer.astro';
+---
 
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Fredoka:wght@400;500;600&display=swap" rel="stylesheet" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Argenpedia</title>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="layout">
+      <Navbar />
+      <main>
+        <slot />
+      </main>
+      <Footer />
+    </div>
+
+    <style>
+         :root {
+        --font-h1: 'Changa One', cursive;
+        --font-h2: 'Playfair Display', serif;
+        --font-h3: 'Playfair Display', serif;
+        --font-body: 'Fredoka', sans-serif;
+        --font-link: 'Fredoka', sans-serif;
+      }
+
+      h1 {
+        font-family: var(--font-h1);
+      }
+
+      h2, h3 {
+        font-family: var(--font-h2);
+      }
+
+      p {
+        font-family: var(--font-body);
+      }
+
+      a {
+        font-family: var(--font-link);
+      }
+
+      body {
+        font-family: var(--font-body);
+      }
+
+
+
+      * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      .layout {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+
+      }
+
+      main {
+        flex: 1;
+      }
+    </style>
+  </body>
+</html>

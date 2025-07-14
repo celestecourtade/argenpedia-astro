@@ -1,0 +1,76 @@
+[
+  {
+    "id": "importacion",
+    "title": "Importación",
+    "image": "/img/img-sociales/importacion.webp",
+    "content": "En Argentina, muchas personas cultivan alimentos como la soja, el trigo y el maíz. Estos alimentos nos sirven para comer y también se venden a otros países."
+  },
+  {
+    "id": "ganaderia",
+    "title": "Ganadería",
+    "image": "/img/img-sociales/ganaderia.webp",
+    "content": "La ganadería es cuidar animales como vacas y ovejas para obtener carne, leche y lana. Argentina es famosa por su carne de vaca, que muchas personas disfrutan."
+  },
+  {
+    "id": "industria",
+    "title": "Industria",
+    "image": "/img/img-sociales/industria.webp",
+    "content": "La industria es el lugar donde se fabrican cosas como autos, ropa y comida enlatada. Así, se crean productos que usamos todos los días."
+  },
+  {
+    "id": "comercio",
+    "title": "Comercio",
+    "image": "/img/img-sociales/comercio.webp",
+    "content": "El comercio es cuando las personas compran y venden cosas. Esto puede pasar dentro del país o con otros países del mundo."
+  },
+  {
+    "id": "exportacion",
+    "title": "Exportación",
+    "image": "/img/img-sociales/exportacion.webp",
+    "content": "La exportación es cuando Argentina vende productos a otros países, como la carne y la soja, para ayudar a la economía."
+  },
+  {
+    "id": "dinero",
+    "title": "Dinero",
+    "image": "/img/img-sociales/dinero.webp",
+    "content": "El dinero es lo que usamos para comprar cosas que necesitamos o queremos. También sirve para ahorrar y planear el futuro."
+  },
+  {
+    "id": "trabajo",
+    "title": "Trabajo",
+    "image": "/img/img-sociales/trabajo.webp",
+    "content": "El trabajo es lo que hacen las personas para ganar dinero y ayudar a que el país funcione, como enseñar en la escuela o construir casas."
+  },
+
+  {
+    "id": "agricultura",
+    "title": "Agricultura",
+    "image": "/img/img-sociales/agricultura.webp",
+    "content": "En Argentina, muchas personas cultivan alimentos como la soja, el trigo y el maíz. Estos alimentos nos sirven para comer y también se venden a otros países."
+  },
+
+  {
+    "id": "ahorro",
+    "title": "Ahorro",
+    "image": "/img/img-sociales/ahorro.webp",
+    "content": "Ahorrar es guardar dinero para usarlo después, ya sea para comprar algo importante o para emergencias."
+  },
+  {
+    "id": "tecnologia",
+    "title": "Tecnología",
+    "image": "/img/img-sociales/tec.webp",
+    "content": "La tecnología ayuda a hacer trabajos más rápido y mejor, y crea nuevas cosas que hacen la vida más fácil."
+  },
+  {
+    "id": "energía",
+    "title": "Energía",
+    "image": "/img/img-sociales/energia.webp",
+    "content": "La energía es lo que usamos para hacer funcionar las luces, las fábricas y los autos. Argentina usa energía del sol, del viento y de otros recursos."
+  },
+  {
+    "id": "turismo",
+    "title": "Turismo",
+    "image": "/img/img-sociales/turismo.webp",
+    "content": "El turismo es cuando personas de otros lugares visitan Argentina para conocer sus paisajes, cultura y comida, y así ayudan a la economía."
+  }
+]

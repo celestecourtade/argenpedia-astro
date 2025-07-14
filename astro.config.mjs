@@ -1,5 +1,10 @@
-// @ts-check
 import { defineConfig } from 'astro/config';
+import path from 'path';
 
-// https://astro.build/config
-export default defineConfig({});
+export default defineConfig({
+  alias: {
+    '@components': path.resolve('./src/components'),
+    '@layouts': path.resolve('./src/layouts'),
+    '@data': path.resolve('./src/data')
+  }
+});

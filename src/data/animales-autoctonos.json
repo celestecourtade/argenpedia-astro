@@ -1,0 +1,123 @@
+[
+    {
+      "id": 1,
+      "nombre": "Cóndor Andino",
+      "imagen": "/img/img-naturales/condor-andino.webp",
+      "texto": "El cóndor andino es una de las aves voladoras más grandes del mundo y símbolo nacional de Argentina."
+    },
+    {
+      "id": 2,
+      "nombre": "Yaguareté",
+      "imagen": "/img/img-naturales/yaguarete.webp",
+      "texto": "El yaguareté es el felino más grande de América y se encuentra principalmente en el norte argentino."
+    },
+    {
+      "id": 3,
+      "nombre": "Carpincho",
+      "imagen": "/img/img-naturales/carpincho.webp",
+      "texto": "El carpincho es el roedor más grande del mundo y habita en zonas húmedas del litoral argentino."
+    },
+    {
+      "id": 4,
+      "nombre": "Guanaco",
+      "imagen": "/img/img-naturales/guanaco.webp",
+      "texto": "El guanaco es un camélido sudamericano que habita en la región patagónica y preandina."
+    },
+    {
+      "id": 5,
+      "nombre": "Puma",
+      "imagen": "/img/img-naturales/puma.webp",
+      "texto": "El puma es un felino adaptable que se encuentra en distintas regiones del país."
+    },
+    {
+      "id": 6,
+      "nombre": "Ñandú",
+      "imagen": "/img/img-naturales/ñandu.webp",
+      "texto": "El ñandú es un ave corredora, similar a un avestruz, muy común en las pampas argentinas."
+    },
+    {
+      "id": 7,
+      "nombre": "Tatú Carreta",
+      "imagen": "/img/img-naturales/tatu-carreta.webp",
+      "texto": "El tatú carreta es un armadillo de gran tamaño típico de las regiones centro y norte de Argentina."
+    },
+    {
+      "id": 8,
+      "nombre": "Zorro Gris",
+      "imagen": "/img/img-naturales/zorro-gris.webp",
+      "texto": "El zorro gris habita en las regiones patagónicas y es conocido por su pelaje gris y orejas puntiagudas."
+    },
+    {
+      "id": 9,
+      "nombre": "Carancho",
+      "imagen": "/img/img-naturales/carancho.webp",
+      "texto": "El carancho es un ave rapaz carroñera que se encuentra en diversas regiones del país."
+    },
+    {
+      "id": 10,
+      "nombre": "Maras",
+      "imagen": "/img/img-naturales/maras.webp",
+      "texto": "La mara es un roedor similar a un conejo grande que habita en la Patagonia y las pampas."
+    },
+    {
+      "id": 11,
+      "nombre": "Cisne de cuello negro",
+      "imagen": "/img/img-naturales/cisne.webp",
+      "texto": "Este cisne es un ave acuática con cuello y cabeza negras, presente en humedales argentinos."
+    },
+    {
+      "id": 12,
+      "nombre": "Tucán",
+      "imagen": "/img/img-naturales/tucan.webp",
+      "texto": "El tucán es un ave colorida y con un pico grande que se encuentra en las selvas del noreste argentino."
+    },
+    {
+      "id": 13,
+      "nombre": "Delfín del Plata",
+      "imagen": "/img/img-naturales/delfin-de-plata.webp",
+      "texto": "El delfín del Plata es un cetáceo de agua dulce que habita en ríos y estuarios de Argentina."
+    },
+    {
+      "id": 14,
+      "nombre": "Yacaré",
+      "imagen": "/img/img-naturales/Yacaré.webp",
+      "texto": "El yacaré es un caimán que habita en humedales y ríos del norte argentino."
+    },
+    {
+      "id": 15,
+      "nombre": "Aguila Mora",
+      "imagen": "/img/img-naturales/aguila-mora.webp",
+      "texto": "El águila mora es un ave rapaz que habita en los bosques subtropicales del país."
+    },
+    {
+      "id": 16,
+      "nombre": "Carpintero Gigante",
+      "imagen": "/img/img-naturales/carpintero-gigante.webp",
+      "texto": "El carpintero gigante es una de las aves carpinteras más grandes del mundo, presente en Argentina."
+    },
+    {
+      "id": 17,
+      "nombre": "Monito del Monte",
+      "imagen": "/img/img-naturales/monito-del-monte.webp",
+      "texto": "El monito del monte es un pequeño marsupial que habita en los bosques del sur argentino."
+    },
+    {
+      "id": 18,
+      "nombre": "Chinchilla",
+      "imagen": "/img/img-naturales/chinchilla.webp",
+      "texto": "La chinchilla es un roedor de pelaje muy suave que habita zonas montañosas de Argentina y Chile."
+    },
+    {
+      "id": 19,
+      "nombre": "Huemul",
+      "imagen": "/img/img-naturales/huemul.webp",
+      "texto": "El huemul es un ciervo andino en peligro de extinción, símbolo de la Patagonia."
+    },
+    {
+      "id": 20,
+      "nombre": "Corzuela",
+      "imagen": "/img/img-naturales/corzuela.webp",
+      "texto": "La corzuela es un pequeño ciervo que habita en bosques y selvas argentinas."
+    }
+  ]
+  

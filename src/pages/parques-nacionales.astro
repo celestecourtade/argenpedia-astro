@@ -1,0 +1,16 @@
+---
+import Layout from '@layouts/Layout.astro';
+import GridNatural from '@components/GridNatural.astro';
+import parques from '@data/parques-nacionales.json';
+---
+
+<Layout>
+
+  <GridNatural
+  title="Parques Nacionales"
+  items={parques}
+  bodyBgColor="#5ea65e"
+  cardBgColor="#438d43"
+/>
+
+</Layout>

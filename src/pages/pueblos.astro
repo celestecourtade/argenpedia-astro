@@ -1,0 +1,463 @@
+---
+import Layout from '@layouts/Layout.astro';
+import Carousel1 from '@components/Carousel1.astro';
+
+
+---
+
+<Layout>
+
+  <div class="historia-title">
+    <h1 class="historia-title__main">Pueblos Originarios</h1>
+  </div>
+
+  <div class="cards">
+    <div class="cards__item cards__item--one">
+      <h2 class="cards__title">🏹 Pueblos Originarios</h2>
+      <p class="cards__text">
+        ¿Sabías que mucho antes de que llegaran los españoles, ya había personas
+        viviendo en lo que hoy es Argentina?<br />
+        Vivían en distintas regiones del país, con sus propias costumbres, lenguas,
+        viviendas y formas de vivir. ¡Cada pueblo era único!
+      </p>
+    </div>
+    <div class="cards__item cards__item--two">
+      <h2 class="cards__title">🌄 ¿Quiénes eran?</h2>
+      <p class="cards__text">
+        Algunos de los pueblos originarios más conocidos son:<br />
+        Mapuches ➤ Sur del país, buenos jinetes.<br />
+        Guaraníes ➤ Norte/litoral, cultivaban y hablaban guaraní.<br />
+        Diaguitas ➤ Noroeste, sembraban en terrazas.<br />
+        Comechingones ➤ Córdoba/San Luis, casas semienterradas.<br />
+        Wichís, Qom, Mocovíes, Tehuelches, Selk'nam y más.
+      </p>
+    </div>
+  </div>
+
+  <Carousel1/>
+
+  <div class="info-blocks">
+    <div class="info-block info-block--first">
+      <h2 class="info-title">🧺 ¿Cómo vivían?</h2>
+      <p class="info-text">
+        Sembraban maíz, papa y calabaza. 🌽🥔
+        Pescaban, cazaban y recolectaban frutos. 🐟🍓
+        Hacían cerámica, tejidos y flechas. 🧶🏹
+        Tenían mitos, leyendas y celebraciones. 🏹
+        Cuidaban la tierra como algo sagrado. 🌎💚
+      </p>
+    </div>
+    <div class="info-block info-block--second">
+      <h2 class="info-title">🌄 ¿Dónde vivían? </h2>
+      <p class="info-text">
+        Vivían en distintos lugares según la región:
+        En el norte hacía calor y selva.
+        En el sur, frío y viento.
+        En el centro, sierras y llanuras. 
+        Cada pueblo se adaptó al lugar donde vivía. Por ejemplo:
+        Los Tehuelches usaban pieles por el frío del sur.
+        Los Guaraníes vivían cerca de los ríos.
+        Los Diaguitas construían en las montañas.
+      </p>
+    </div>
+  </div>
+
+    <div class="tribe-cards-header">
+      <h2 class="tribe-section-title">Pueblos Originarios de Argentina</h2>
+    </div>
+
+  <section class="tribe-cards">
+    <div class="tribe-card">
+      <h2 class="tribe-title">🏕️ ¿Sabías qué...?</h2>
+      <p class="tribe-text">
+        Algunos pueblos originarios creían que la Tierra era su madre y el Sol su padre.  
+        🌞 Pensaban que todo estaba vivo: los ríos, las montañas, los árboles.  
+        ¡Vivían en armonía con la naturaleza!
+      </p>
+    </div>
+  
+    <div class="tribe-card">
+      <h2 class="tribe-title">🎨 Arte y tradiciones</h2>
+      <p class="tribe-text">
+        Usaban tintes naturales, plumas y piedras para hacer arte.  
+        🎶 Tenían canciones, danzas y cuentos que se pasaban de generación en generación.
+      </p>
+    </div>
+  
+    <div class="tribe-card">
+      <h2 class="tribe-title">🏞️ Diversidad de pueblos</h2>
+      <p class="tribe-text">
+        En Argentina hay más de 30 pueblos originarios.  
+        Como los Mapuches, Guaraníes, Wichís, Qom y muchos más.  
+        Cada uno con su propia lengua, historia y costumbres.
+      </p>
+    </div>
+  
+    <div class="tribe-card">
+      <h2 class="tribe-title">🍠 ¿Qué comían?</h2>
+      <p class="tribe-text">
+        Cultivaban maíz, zapallo y papa.  
+        También cazaban, pescaban y recolectaban frutos.  
+        ¡Aprovechaban lo que daba la tierra!
+      </p>
+    </div>
+  
+    <div class="tribe-card">
+      <h2 class="tribe-title">🏠 ¿Cómo vivían?</h2>
+      <p class="tribe-text">
+        Según el lugar, construían chozas con barro, piedra o ramas.  
+        Los Comechingones vivían en casas semienterradas para protegerse del clima.
+      </p>
+    </div>
+  
+    <div class="tribe-card">
+      <h2 class="tribe-title">📣 Hoy también están</h2>
+      <p class="tribe-text">
+        Hoy siguen luchando por sus derechos y su cultura.  
+        Muchos chicos aprenden las lenguas originarias y participan en fiestas tradicionales.  
+        ¡Los pueblos originarios son parte del presente!
+      </p>
+    </div>
+  </section>
+
+  <section class="game">
+    <h2 class="game__title">¡Aprendamos Jugando!</h2>
+    <h3 class="game__subtitle">Cual pueblo originario es? 🤔</h3>
+  
+    <div class="game__scores">
+      <div id="score" class="game__score">Puntos: 0</div>
+      <div id="lastScore" class="game__last-score">Ultimo puntaje: -</div>
+    </div>
+  
+    <div class="game__card">
+      <p id="question" class="game__question">Cargando pregunta...</p>
+      <div id="options" class="game__options"></div>
+      <p id="feedback" class="game__feedback"></p>
+      <button id="next-btn" class="game__btn" onclick="nextQuestion()">Suiguiente</button>
+    </div>
+  </section>
+  
+
+
+  
+  <style>
+    body {
+      background-color: #ce8372;
+      margin: 0;
+    }
+
+    .historia-title {
+      text-align: center;
+      padding-top: 2rem;
+      color: #ffffff;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    .cards__item {
+      background-color: #ab4633;
+      padding: 2rem;
+      border-radius: 1.5rem;
+      color: #ffffff;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+      font-size: 1rem;
+    }
+
+    .cards__title {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    @media (min-width: 768px) {
+      .cards {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    .info-blocks {
+    display: flex;
+    gap: 2rem;
+    padding: 4rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+  .info-block {
+    background: #ab4633;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+    padding: 1.5rem 2rem;
+    flex: 1 1 300px;
+    max-width: 600px;
+    transition: transform 0.3s ease;
+  }
+
+  .info-block:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgb(0 0 0 / 0.15);
+  }
+
+  .info-block--first {
+    border-top: 4px solid #8b0000; /* rojo oscuro */
+  }
+
+  .info-block--second {
+    border-top: 4px solid #8b0000; /* rojo oscuro */
+
+  }
+
+  .info-title {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    color: #ffffff;
+  }
+
+  .info-text {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #ffffff;
+    white-space: pre-line;
+  }
+
+
+  .tribe-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tribe-section-title {
+  text-align: center;
+  font-size: 2rem;
+  color:#f6f6f6;
+}
+
+
+.tribe-card {
+  background-color: #ab4633;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.tribe-card:hover {
+  transform: scale(1.02);
+}
+
+.tribe-title {
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  margin-bottom: 1rem;
+  color: #d9d9d9;
+}
+
+.tribe-text {
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  line-height: 1.6;
+  color: #fdfdfd;
+}
+
+.game {
+  background-color: #ab4633;
+  text-align: center;
+  padding: 2rem;
+}
+
+.game__title {
+  color: #ffffff;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.game__subtitle {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.game__scores {
+  margin-bottom: 1rem;
+}
+
+.game__score,
+.game__last-score {
+  font-size: 18px;
+  color: #f1f1f1;
+  font-weight: bold;
+  margin: 0.3rem 0;
+}
+
+.game__card {
+  background:  #ce8372;
+  padding: 1.5rem;
+  margin: 2rem auto;
+  border-radius: 12px;
+  max-width: 500px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  color: white;
+}
+
+.game__question {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.game__options button {
+  background: #fefae0;
+  color: #264653;
+  font-size: 16px;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  margin: 0.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.game__options button:hover {
+  background: #2a9d8f;
+  color: white;
+}
+
+.game__feedback {
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.game__btn {
+  display: none;
+  margin-top: 1.5rem;
+  background: 
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Tablet: 2 columnas */
+@media (min-width: 600px) {
+  .tribe-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop: 3 columnas */
+@media (min-width: 900px) {
+  .tribe-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+  </style>
+
+
+<script is:inline>
+  const questions = [
+    {
+      clue: "Vivimos en el noreste argentino. Usamos el algodón para hacer ropa.",
+      options: ["Diaguita", "Qom", "Mapuche"],
+      answer: "Qom"
+    },
+    {
+      clue: "Vivimos en la región andina. Cultivamos maíz y usamos la cerámica.",
+      options: ["Wichí", "Diaguita", "Guaraní"],
+      answer: "Diaguita"
+    },
+    {
+      clue: "Vivimos en la Patagonia. Usamos ponchos y criamos ganado.",
+      options: ["Mapuche", "Qom", "Guaraní"],
+      answer: "Mapuche"
+    },
+    {
+      clue: "Vivimos en el noreste. Tomamos mate y usamos la selva como recurso.",
+      options: ["Guaraní", "Diaguita", "Mapuche"],
+      answer: "Guaraní"
+    }
+  ];
+
+  let current = 0;
+  let score = 0;
+
+  function questionEl() { return document.getElementById("question"); }
+  function optionsEl() { return document.getElementById("options"); }
+  function feedbackEl() { return document.getElementById("feedback"); }
+  function nextBtn() { return document.getElementById("next-btn"); }
+  function scoreEl() { return document.getElementById("score"); }
+  function lastScoreEl() { return document.getElementById("lastScore"); }
+
+  function showQuestion() {
+    feedbackEl().textContent = "";
+    nextBtn().style.display = "none";
+    const q = questions[current];
+    questionEl().textContent = q.clue;
+
+    optionsEl().innerHTML = "";
+    q.options.forEach(option => {
+      const btn = document.createElement("button");
+      btn.textContent = option;
+      btn.onclick = () => checkAnswer(option);
+      optionsEl().appendChild(btn);
+    });
+  }
+
+  function checkAnswer(selected) {
+    const correct = questions[current].answer;
+    if (selected === correct) {
+      feedbackEl().textContent = "✅ ¡Correcto!";
+      feedbackEl().style.color = "green";
+      score++;
+      scoreEl().textContent = "Puntaje actual: " + score;
+    } else {
+      feedbackEl().textContent = "❌ Incorrecto. Era " + correct + ".";
+      feedbackEl().style.color = "red";
+    }
+
+    Array.from(optionsEl().children).forEach(btn => btn.disabled = true);
+    nextBtn().style.display = "inline-block";
+  }
+
+  function nextQuestion() {
+    current++;
+    if (current < questions.length) {
+      showQuestion();
+    } else {
+      questionEl().textContent = "🎉 ¡Juego terminado!";
+      optionsEl().innerHTML = "";
+      feedbackEl().textContent = `Tu puntaje final es ${score} de ${questions.length}`;
+      nextBtn().style.display = "none";
+      saveScore();
+    }
+  }
+
+  function saveScore() {
+    localStorage.setItem("puntaje-argenpedia", score);
+  }
+
+  function showLastScore() {
+    const last = localStorage.getItem("puntaje-argenpedia");
+    if (last !== null) {
+      lastScoreEl().textContent = `Último puntaje guardado: ${last}`;
+    }
+  }
+
+  window.onload = () => {
+    showQuestion();
+    showLastScore();
+  };
+</script>
+
+  
+
+</Layout>

@@ -1,0 +1,12 @@
+---
+import GridSocial from '@components/GridSocial.astro';
+import economia from '@data/economia.json' assert { type: 'json' };
+import Layout from '@layouts/Layout.astro';
+
+
+const bgColor = '#2e8b57';
+---
+
+<Layout>
+    <GridSocial items={economia} title="Economía Argentina" bgColor={bgColor} />
+</Layout>

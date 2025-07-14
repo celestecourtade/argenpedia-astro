@@ -1,0 +1,58 @@
+---
+// src/components/Navbar.astro
+---
+
+<nav class="navbar">
+    <div class="navbar__left">
+      <a href="/" class="navbar__brand">Argenpedia</a>
+    </div>
+    <div class="navbar__center">
+      <a href="/" class="navbar__link">Menu</a>
+      <a href="/credits" class="navbar__link">Créditos</a>
+    </div>
+  </nav>
+  
+  <style>
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background:#0f004b;
+      box-shadow: 0 2px 6px rgba(0, 247, 255, 0.1);
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 999;
+    }
+  
+    .navbar__left {
+      flex: 1;
+    }
+  
+    .navbar__brand {
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-decoration: none;
+      color: #ffffff;
+    }
+  
+    .navbar__center {
+      flex: 2;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+  
+    .navbar__link {
+      text-decoration: none;
+      color: #eeeeee;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+  
+    .navbar__link:hover {
+      color: #0077cc;
+    }
+  </style>
+  

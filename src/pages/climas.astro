@@ -1,0 +1,17 @@
+---
+import GaleriaInfo from '@components/GaleriaInfo.astro';
+import climas from '@data/climas.json';
+import Layout from '@layouts/Layout.astro';
+---
+
+
+<Layout>
+  <GaleriaInfo
+    title="Climas de Argentina"
+    items={climas}
+    color="#ffff"
+    bgColor="#227c48"
+    cardColor="#229756"
+
+  />
+</Layout>

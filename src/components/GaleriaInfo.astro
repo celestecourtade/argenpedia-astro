@@ -1,0 +1,78 @@
+---
+const { title = '', items = [], color = '#000', cardColor = '#fff', bgColor = '#fff' } = Astro.props;
+---
+<style>
+  .galeria-wrapper {
+    background-color: var(--bg-color);
+    padding: 2rem;
+  }
+
+  .galeria-title {
+    text-align: center;
+    color: var(--color);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  section.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    gap: 1.5rem;
+  }
+
+  .card {
+    background: var(--card-color);
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    color: inherit;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+  }
+
+  .card__img {
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 1rem 1rem 0 0;
+  }
+
+  .card__body {
+    padding: 1rem;
+  }
+
+  .card__title {
+    color: #d6d6d6;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .card__desc {
+    text-align: center;
+    font-size: 1rem;
+    color: #fdfdfd;
+  }
+</style>
+
+<div
+  class="galeria-wrapper"
+  style={`--color: ${color}; --bg-color: ${bgColor}; --card-color: ${cardColor};`}
+>
+  {title && <h1 class="galeria-title">{title}</h1>}
+
+  <section class="grid">
+    {items.map(item => (
+      <article class="card" key={item.id}>
+        <img src={item.image} alt={item.title} class="card__img" />
+        <div class="card__body">
+          <h3 class="card__title">{item.title}</h3>
+          <p class="card__desc">{item.description}</p>
+        </div>
+      </article>
+    ))}
+  </section>
+</div>

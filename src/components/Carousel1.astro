@@ -1,0 +1,149 @@
+---
+import historiaCards from '../data/historia-cards.json';
+---
+
+<style>
+  .carousel-container {
+    overflow: hidden;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .carousel-container h2 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    gap: 1rem;
+  }
+
+  .card {
+    flex: 0 0 auto;
+    box-sizing: border-box;
+    padding: 1rem;
+    background-color: #953322;
+    border-radius: 2rem;
+  }
+
+  .card img {
+    width: 100%;
+    border-radius: 1rem;
+    height: auto;
+  }
+
+  .card h3 {
+    text-align: center;
+    color: white;
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+  }
+
+  .card p {
+    color: #ffffff;
+    text-align: center;
+
+  }
+
+  .controls {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  button {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border: none;
+    background: #E4BAC8;
+    border-radius: 0.5rem;
+    font-weight: bold;
+  }
+
+  button:hover {
+    background: #d49bb3;
+  }
+</style>
+
+<div class="carousel-container">
+    <h2>🕵️‍♀️ ¡Descubrí algo increíble de los pueblos originarios!</h2>
+  <div id="carousel-track" class="carousel-track">
+    {historiaCards.map(card => (
+      <div key={card.id} class="card">
+        <img src={card.image} alt={card.title} />
+        <h3>{card.title}</h3>
+        <p>{card.text}</p>
+      </div>
+    ))}
+  </div>
+</div>
+
+<div class="controls">
+  <button onclick="prev()">←</button>
+  <button onclick="next()">→</button>
+</div>
+
+<script is:inline>
+    const track = document.getElementById('carousel-track');
+    const cards = track.children;
+    let visibleCards = 3;
+    let currentIndex = 0;
+    let cardWidth = 0;
+    let gap = 0;
+  
+    function getVisibleCards() {
+      const width = window.innerWidth;
+      if (width < 640) return 1;
+      if (width < 900) return 2;
+      return 3;
+    }
+  
+    function setCardWidths() {
+      visibleCards = getVisibleCards();
+  
+      // Calcular ancho real del track (sin scrollbars)
+      const containerWidth = track.parentElement.clientWidth;
+  
+      // Medir gap entre cards desde CSS
+      gap = parseFloat(getComputedStyle(track).gap) || 0;
+  
+      // Ancho de cada card (ajustado al gap total)
+      cardWidth = (containerWidth - gap * (visibleCards - 1)) / visibleCards;
+  
+      for (let card of cards) {
+        card.style.minWidth = `${cardWidth}px`;
+      }
+  
+      updateCarousel();
+    }
+  
+    function updateCarousel() {
+      const offset = currentIndex * (cardWidth + gap);
+      track.style.transform = `translateX(-${offset}px)`;
+    }
+  
+    function next() {
+      if (currentIndex < cards.length - visibleCards) {
+        currentIndex++;
+        updateCarousel();
+      }
+    }
+  
+    function prev() {
+      if (currentIndex > 0) {
+        currentIndex--;
+        updateCarousel();
+      }
+    }
+  
+    window.addEventListener('resize', setCardWidths);
+  
+    setTimeout(setCardWidths, 100);
+  </script>
+  

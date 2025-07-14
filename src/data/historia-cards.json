@@ -1,0 +1,39 @@
+[
+    {
+      "id": 1,
+      "title": "Diaguitas",
+      "text": " Los diaguitas vivían en el norte de Argentina.",
+      "image": "/img/diaguitas.jpeg"
+    },
+    {
+      "id": 2,
+      "title": "Wichis",
+      "text": "Texto de la card 2",
+      "image": "/img/wichis.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Card 3",
+      "text": "Texto de la card 3",
+      "image":"/img/diaguitas.jpeg"
+    },
+    {
+      "id": 4,
+      "title": "Card 4",
+      "text": "Texto de la card 4",
+      "image": "/img/diaguitas.jpeg"
+    },
+    {
+      "id": 5,
+      "title": "Card 5",
+      "text": "Texto de la card 5",
+      "image": "/img/diaguitas.jpeg"
+    },
+    {
+      "id": 6,
+      "title": "Card 6",
+      "text": "Texto de la card 6",
+      "image": "/img/diaguitas.jpeg"
+    }
+  ]
+  

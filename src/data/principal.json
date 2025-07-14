@@ -1,0 +1,111 @@
+{
+    "history": [
+      {
+        "id": "pueblos-originarios",
+        "title": "Pueblos Originarios",
+        "image": "/img/originarios.png",
+        "content": "Los pueblos originarios vivían en armonía con la naturaleza y tenían culturas muy variadas.",
+        "link": "/pueblos"
+      },
+      {
+        "id": "colonizacion",
+        "title": "Colonización",
+        "image": "/img/colonizacion.png",
+        "content": "La llegada de los españoles cambió la historia y la cultura de Argentina.",
+        "link": "/colonizacion"
+
+      },
+      {
+        "id": "independencia",
+        "title": "Independencia",
+        "image": "/img/independencia.png",
+        "content": "En 1816, Argentina declaró su independencia de España.",
+        "link": "/revolucion"
+
+      }
+    ],
+    "geography": [
+      {
+        "id": "rios",
+        "title": "Ríos Importantes",
+        "image": "/img/img-geografia/rio-parana.webp",
+        "content": "El río Paraná y el río Uruguay son los más largos del país.",
+        "link": "/rios"
+
+        
+      },
+      {
+        "id": "montanas",
+        "title": "Montañas y Sierras",
+        "image": "/img/img-geografia/aconcagua.webp",
+        "content": "Los Andes atraviesan el oeste de Argentina y tienen cumbres muy altas.",
+        "link": "/montanas"
+
+      },
+      {
+        "id": "clima",
+        "title": "Climas de Argentina",
+        "image": "/img/img-geografia/rio-parana.webp",
+        "content": "Argentina tiene climas muy variados, desde frío hasta subtropical.",
+        "link": "/climas"
+      }
+    ],
+
+    
+    "social_sciences": [
+      {
+        "id": "culturas",
+        "title": "Culturas y Sociedad",
+        "image": "/img/img-sociales/carnaval.webp",
+        "content": "Argentina es un país muy diverso, con muchas culturas que conviven.",
+        "link": "/cultura"
+
+
+      },
+      {
+        "id": "economia",
+        "title": "Economía",
+        "image": "/img/img-sociales/ganaderia.webp",
+        "content": "La agricultura y la ganadería son importantes para la economía argentina.",
+        "link": "/economia"
+
+      },
+      {
+        "id": "gobierno",
+        "title": "Gobierno y Política",
+        "image": "/img/img-sociales/gobierno.webp",
+        "content": "Argentina es una república con un sistema democrático.",
+        "link": "/gobierno"
+
+      }
+    ],
+    "natural_sciences": [
+      {
+        "id": "animales",
+        "title": "Animales Autoctonos de Argentina",
+        "image": "/img/img-naturales/monocai.webp",
+        "content": "El cóndor y la ballena franca son animales emblemáticos.",
+        "link": "/natural-sciences/animales"
+
+
+      },
+      {
+        "id": "Flora y Fauna",
+        "title": "Regiones",
+        "image": "/img/img-naturales/patagonia.webp",
+        "content": "Los bosques patagónicos tienen árboles únicos como el ciprés de la cordillera.",
+        "link": "/flora-fauna"
+
+      },
+      {
+        "id": "Parques Nacionales",
+        "title": "Parques Nacionales",
+        "image": "/img/img-naturales/iguazu.webp",
+        "content": "Desde la selva misionera hasta la estepa patagónica, Argentina tiene varios ecosistemas.",
+        "link": "/parques-nacionales"
+
+      }
+    ]
+    
+  }
+  

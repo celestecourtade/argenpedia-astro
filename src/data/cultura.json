@@ -1,0 +1,75 @@
+[
+    {
+      "id": "tango",
+      "title": "El Tango",
+      "image": "/img/img-sociales/tango.webp",
+      "content": "El tango es un género musical y baile que nació en Buenos Aires a fines del siglo XIX, símbolo cultural de Argentina."
+    },
+    {
+      "id": "mate",
+      "title": "El Mate",
+      "image": "/img/img-sociales/mate.webp",
+      "content": "El mate es una infusión tradicional que se comparte entre amigos y familia, muy popular en Argentina."
+    },
+    {
+      "id": "fiestas-populares",
+      "title": "Fiestas Populares",
+      "image": "/img/img-sociales/carnaval.webp",
+      "content": "Celebraciones como el Carnaval de Gualeguaychú y la Fiesta de la Vendimia son muy importantes."
+    },
+    {
+      "id": "literatura",
+      "title": "Literatura Argentina",
+      "image": "/img/img-sociales/cortazar.webp",
+      "content": "Escritores como Jorge Luis Borges y Julio Cortázar son referentes internacionales."
+    },
+    {
+      "id": "arte-plastico",
+      "title": "Arte Plástico",
+      "image": "/img/img-sociales/arte.webp",
+      "content": "Artistas como Xul Solar y Antonio Berni dejaron un legado importante en el arte argentino."
+    },
+    {
+      "id": "gastronomia",
+      "title": "Gastronomía",
+      "image": "/img/img-sociales/asado.webp",
+      "content": "El asado, las empanadas y el dulce de leche son platos emblemáticos."
+    },
+    {
+      "id": "deporte",
+      "title": "Deportes",
+      "image": "/img/img-sociales/futbol.webp",
+      "content": "El fútbol es el deporte más popular, con ídolos como Diego Maradona y Lionel Messi."
+    },
+    {
+      "id": "musica-folklorica",
+      "title": "Música Folklórica",
+      "image": "/img/img-sociales/folklore.webp",
+      "content": "La música folklórica refleja las tradiciones y costumbres de distintas regiones del país."
+    },
+    {
+      "id": "cinema",
+      "title": "Cine Argentino",
+      "image": "/img/img-sociales/cine.webp",
+      "content": "El cine argentino tiene reconocidos directores y películas que han ganado premios internacionales."
+    },
+    {
+      "id": "arquitectura",
+      "title": "Arquitectura",
+      "image": "/img/img-sociales/arquitectura.webp",
+      "content": "La arquitectura argentina combina estilos coloniales, europeos y modernos."
+    },
+
+  {
+      "id": "arquitectura",
+      "title": "Arquitectura",
+      "image": "/img/img-sociales/arquitectura.webp",
+      "content": "La arquitectura argentina combina estilos coloniales, europeos y modernos."
+    },
+    {
+      "id": "arquitectura",
+      "title": "Arquitectura",
+      "image": "/img/img-sociales/arquitectura.webp",
+      "content": "La arquitectura argentina combina estilos coloniales, europeos y modernos."
+    }
+    ]  

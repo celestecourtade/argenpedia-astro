@@ -1,0 +1,76 @@
+[
+    {
+      "id": "que-es-gobierno",
+      "title": "¿Qué es el Gobierno?",
+      "image": "/img/img-sociales/comercio.webp",
+      "content": "El gobierno es el grupo de personas que toman decisiones para organizar el país y cuidar a todos."
+    },
+    {
+      "id": "democracia",
+      "title": "La Democracia",
+      "image": "/img/img-sociales/comercio.webp",
+      "content": "La democracia es cuando todos los ciudadanos pueden elegir a sus líderes votando."
+    },
+    {
+      "id": "presidente",
+      "title": "El Presidente",
+      "image": "/img/img-sociales/comercio.webp",
+      "content": "El presidente es la persona que dirige el país y toma decisiones importantes."
+    },
+    {
+      "id": "congreso",
+      "title": "El Congreso",
+      "image": "/img/img-sociales/comercio.webp",
+      "content": "El Congreso es donde se hacen las leyes para que todos las respeten."
+    },
+    {
+      "id": "leyes",
+      "title": "Las Leyes",
+      "image": "/img/img-sociales/comercio.webp",
+      "content": "Las leyes son reglas que ayudan a que todos vivamos en paz y orden."
+    },
+    {
+      "id": "voto",
+      "title": "El Voto",    
+      "image": "/img/img-sociales/comercio.webp",
+      "content": "Votar es elegir a las personas que van a dirigir nuestro país."
+    },
+    {
+      "id": "partidos-politicos",
+      "title": "Partidos Políticos",
+      "image": "/img/img-sociales/comercio.webp",
+      "content": "Los partidos políticos son grupos que tienen ideas diferentes para gobernar."
+    },
+    {
+      "id": "municipios",
+      "title": "Los Municipios",
+      "image": "/img/img-sociales/comercio.webp",
+      "content": "Los municipios son las ciudades y pueblos que tienen su propio gobierno para ayudar a la gente."
+    },
+    {
+      "id": "derechos",
+      "title": "Derechos y Deberes",
+      "image": "/img/img-sociales/comercio.webp",
+      "content": "Todos tenemos derechos que nos protegen y deberes que debemos cumplir."
+    },
+    {
+      "id": "elecciones",
+      "title": "Las Elecciones",
+      "image": "/img/img-sociales/comercio.webp",
+      "content": "Las elecciones son la forma en que elegimos a quienes nos gobiernan cada cierto tiempo."
+    },
+    {
+      "id": "elecciones",
+      "title": "Las Elecciones",
+      "image": "/img/img-sociales/comercio.webp",
+      "content": "Las elecciones son la forma en que elegimos a quienes nos gobiernan cada cierto tiempo."
+    },
+    {
+      "id": "elecciones",
+      "title": "Las Elecciones",
+      "image": "/img/img-sociales/comercio.webp",
+      "content": "Las elecciones son la forma en que elegimos a quienes nos gobiernan cada cierto tiempo."
+    }
+
+  ]
+  

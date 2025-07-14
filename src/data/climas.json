@@ -1,0 +1,58 @@
+[
+    {
+      "id": 1,
+      "title": "Clima Pampeano",
+      "description": "Clima templado con veranos cálidos e inviernos frescos, predominante en la región pampeana.",
+      "image": "/img/img-geografia/clima-pampeano.webp"
+
+    },
+    {
+      "id": 2,
+      "title": "Clima Patagónico",
+      "description": "Clima frío y seco con vientos intensos, típico de la región de la Patagonia.",
+      "image": "/img/img-geografia/clima-patagonico.webp"
+
+    },
+    {
+      "id": 3,
+      "title": "Clima Tropical",
+      "description": "Clima cálido y húmedo, característico del noreste argentino.",
+      "image": "/img/img-geografia/clima-tropical.webp"
+    },
+    {
+      "id": 4,
+      "title": "Clima Andino",
+      "description": "Clima frío y seco de montaña en la Cordillera de los Andes.",
+      "image": "/img/img-geografia/clima-andino.webp"
+
+    },
+    {
+      "id": 5,
+      "title": "Clima Subtropical",
+      "description": "Región con temperaturas cálidas y lluvias abundantes durante todo el año.",
+      "image": "/img/img-geografia/clima-tropical.webp"
+
+    },
+    {
+      "id": 6,
+      "title": "Clima Semiárido",
+      "description": "Zonas con escasas precipitaciones, presentes en algunas partes del norte y oeste argentino.",
+      "image": "/img/img-geografia/clima-arido.webp"
+
+    },
+    {
+      "id": 7,
+      "title": "Clima Oceánico",
+      "description": "Clima templado con influencias marítimas en la región sur del país.",
+      "image": "/img/img-geografia/clima-oceanico.webp"
+
+    },
+    {
+      "id": 8,
+      "title": "Clima Continental",
+      "description": "Clima con estaciones bien marcadas, presente en la mesopotamia argentina.",
+      "image": "/img/img-geografia/clima-continental.webp"
+
+    }
+  ]
+  

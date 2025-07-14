@@ -1,0 +1,16 @@
+---
+import HistoriaGrid from '@components/HistoriaGrid.astro';
+import colonizacion from '@data/colonizacion.json';
+import Layout from '@layouts/Layout.astro';
+
+---
+
+<Layout>
+  <HistoriaGrid
+    title="Colonización en América en 9 pasos"
+    subtitle="Los hechos más importantes de la colonización"
+    items={colonizacion}
+    color="#e0f7fa"  
+    bodyBgColor="#233387"
+  />
+</Layout>

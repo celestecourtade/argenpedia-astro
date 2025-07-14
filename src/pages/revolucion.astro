@@ -1,0 +1,15 @@
+---
+import Layout from '@layouts/Layout.astro';
+import HistoriaGrid from '@components/HistoriaGrid.astro';
+import revolucion from '@data/revolucion.json';
+---
+
+<Layout>
+    <HistoriaGrid
+    title="✨ La Revolución de Mayo en 9 pasos"
+    subtitle="¿Qué pasó en 1810 y por qué fue tan importante?"
+    items={revolucion}
+    color="#fff0f5"
+    bodyBgColor="#800000"
+    />
+</Layout>

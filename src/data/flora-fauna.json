@@ -1,0 +1,45 @@
+
+[
+  {
+    "id": 1,
+    "title": "🌴 Noroeste (NOA)",
+    "text": "Montañas, cactus y cóndores. Región de fauna y flora adaptada a la altura y el clima seco.",
+    "image": "/img/img-naturales/noroeste.webp"
+
+  },
+  {
+    "id": 2,
+    "title": "🌴 Noreste (NEA)",
+    "text": "Selvas húmedas, tucanes y yaguaretés. Rica en biodiversidad.",
+    "image": "/img/img-naturales/noreste.webp"
+
+  },
+  {
+    "id": 3,
+    "title": "🍇 Cuyo",
+    "text": "Zonas áridas, montañas y viñedos. Habitan guanacos y crecen jarillas.",
+    "image": "/img/img-naturales/cuyo.webp"
+
+  },
+  {
+    "id": 4,
+    "title": "🌾 Región Pampeana",
+    "text": "Llanuras fértiles, venados y pastizales. Ideal para la agricultura.",
+    "image": "/img/img-naturales/pampeana.webp"
+
+  },
+  {
+    "id": 5,
+    "title": "❄️ Patagonia",
+    "text": "Vientos fríos, huemules y paisajes únicos. Habitan también zorros y ñandúes.",
+    "image": "/img/img-naturales/patagonia.webp"
+
+  },
+  {
+    "id": 6,
+    "title": "🧊 Antártida Argentina",
+    "text": "Región polar, con pingüinos, focas y líquenes adaptados al frío extremo.",
+    "image": "/img/img-naturales/antartida.webp"
+
+  }
+]

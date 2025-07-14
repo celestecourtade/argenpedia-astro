@@ -1,0 +1,16 @@
+---
+import GaleriaInfo from '@components/GaleriaInfo.astro';
+import montanas from '@data/montanas.json';
+import Layout from '@layouts/Layout.astro';
+---
+
+<Layout>
+  <GaleriaInfo
+    title="Montañas de Argentina"
+    items={montanas}
+    color="#ffff"
+    bgColor="#b27349"
+    cardColor="#9f5927"
+
+  />
+</Layout>
