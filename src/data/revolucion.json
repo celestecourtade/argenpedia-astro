@@ -1,57 +1,56 @@
 [
-    {
-      "id": "paso-1",
-      "titulo": "Paso 1",
-      "img": "/img/monocai.jpg",
-      "texto": "Napoleón invade España y el rey Fernando VII es derrocado."
-    },
-    {
-      "id": "paso-2",
-      "titulo": "Paso 2",
-      "img": "https://via.placeholder.com/300x200",
-      "texto": "En Buenos Aires surgen dudas sobre la autoridad del virrey."
-    },
-    {
-      "id": "paso-3",
-      "titulo": "Paso 3",
-      "img": "https://via.placeholder.com/300x200",
-      "texto": "El 22 de mayo de 1810 se realiza un Cabildo Abierto."
-    },
-    {
-      "id": "paso-4",
-      "titulo": "Paso 4",
-      "img": "https://via.placeholder.com/300x200",
-      "texto": "Se discute si el virrey Cisneros debe continuar en el poder."
-    },
-    {
-      "id": "paso-5",
-      "titulo": "Paso 5",
-      "img": "https://via.placeholder.com/300x200",
-      "texto": "El 24 de mayo se forma una junta con el virrey, pero es rechazada."
-    },
-    {
-      "id": "paso-6",
-      "titulo": "Paso 6",
-      "img": "https://via.placeholder.com/300x200",
-      "texto": "El 25 de mayo se exige la renuncia de Cisneros."
-    },
-    {
-      "id": "paso-7",
-      "titulo": "Paso 7",
-      "img": "https://via.placeholder.com/300x200",
-      "texto": "Se forma la Primera Junta de Gobierno con Saavedra a la cabeza."
-    },
-    {
-      "id": "paso-8",
-      "titulo": "Paso 8",
-      "img": "https://via.placeholder.com/300x200",
-      "texto": "Comienza la lucha por la independencia de España."
-    },
-    {
-      "id": "paso-9",
-      "titulo": "Paso 9",
-      "img": "https://via.placeholder.com/300x200",
-      "texto": "La Revolución se extiende a otras ciudades del Virreinato."
-    }
-  ]
-  
+  {
+    "id": "paso-1",
+    "titulo": "1. Napoleón invade España 🐎🏰",
+    "img": "/img/img-historia/rev1.webp",
+    "texto": "Napoleón llega con sus tropas a España y el rey Fernando VII pierde su trono 👑."
+  },
+  {
+    "id": "paso-2",
+    "titulo": "2. Dudas sobre el virrey 🤨📜",
+    "img": "/img/img-historia/rev1.webp",
+    "texto": "En Buenos Aires la gente empieza a preguntarse si el virrey sigue teniendo poder 🤔."
+  },
+  {
+    "id": "paso-3",
+    "titulo": "3. Cabildo Abierto del 22 de mayo 🏛️🗣️",
+    "img": "/img/img-historia/rev1.webp",
+    "texto": "El 22 de mayo muchas personas se juntan para decidir qué hacer 🤝."
+  },
+  {
+    "id": "paso-4",
+    "titulo": "4. ¿Sigue Cisneros? 😕👴",
+    "img": "/img/img-historia/rev1.webp",
+    "texto": "Se debate si el virrey Cisneros debe seguir o no como jefe 🧐."
+  },
+  {
+    "id": "paso-5",
+    "titulo": "5. Rechazo a la junta con el virrey 🙅‍♂️👎",
+    "img": "/img/img-historia/rev1.webp",
+    "texto": "Se forma una junta con el virrey, pero el pueblo no la acepta ❌."
+  },
+  {
+    "id": "paso-6",
+    "titulo": "6. Renuncia del virrey 🙋‍♂️📦",
+    "img": "/img/img-historia/rev1.webp",
+    "texto": "El 25 de mayo, Cisneros tiene que renunciar y dejar su cargo 👋."
+  },
+  {
+    "id": "paso-7",
+    "titulo": "7. Nace la Primera Junta 🇦🇷🎉",
+    "img": "/img/img-historia/rev1.webp",
+    "texto": "Ese mismo día se forma un nuevo gobierno con Saavedra y otros vecinos 💼."
+  },
+  {
+    "id": "paso-8",
+    "titulo": "8. ¡Empieza la lucha por la libertad! ✊🕊️",
+    "img": "/img/img-historia/rev1.webp",
+    "texto": "Comienza la gran lucha para ser libres de España 💪."
+  },
+  {
+    "id": "paso-9",
+    "titulo": "9. La Revolución se expande 🌟📣",
+    "img": "/img/img-historia/rev1.webp",
+    "texto": "La noticia de la revolución llega a otras ciudades del virreinato 🚀."
+  }
+]
