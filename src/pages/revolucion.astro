@@ -12,4 +12,242 @@ import revolucion from '@data/revolucion.json';
     color="#91141c"
     bodyBgColor="#a9433d"
     />
+
+    
+  <section class="game">
+    <h2 class="game__title">¡Aprendamos Jugando!</h2>
+    <h3 class="game__subtitle">Cual paso es? 🤔</h3>
+  
+    <div class="game__scores">
+      <div id="score" class="game__score">Puntos: 0</div>
+      <div id="lastScore" class="game__last-score">Ultimo puntaje: -</div>
+    </div>
+  
+    <div class="game__card">
+      <p id="question" class="game__question">Cargando pregunta...</p>
+      <div id="options" class="game__options"></div>
+      <p id="feedback" class="game__feedback"></p>
+      <button id="next-btn" class="game__btn" onclick="nextQuestion()">Siguiente</button>
+    </div>
+  </section>
+
+  <style is:global>
+    .game {
+  background-color: #ab2821;
+  text-align: center;
+  padding: 2rem;
+}
+
+.game__title {
+  color: #ffffff;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.game__subtitle {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.game__scores {
+  margin-bottom: 1rem;
+}
+
+.game__score,
+.game__last-score {
+  font-size: 18px;
+  color: #f1f1f1;
+  font-weight: bold;
+  margin: 0.3rem 0;
+}
+
+.game__card {
+  background:  #ce8372;
+  padding: 1.5rem;
+  margin: 2rem auto;
+  border-radius: 12px;
+  max-width: 500px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  color: white;
+}
+
+.game__question {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+/* Botones de opciones */
+.game__btn-option {
+  display: block;
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  background-color: #91141c;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.game__btn-option:hover:not(:disabled) {
+  background-color: #a9433d;
+  transform: scale(1.03);
+}
+
+.game__btn-option:disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
+
+/* Botón de "Siguiente" */
+.game__btn {
+  margin-top: 1rem;
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  background-color: #a9433d;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.game__btn:hover {
+  background-color: #91141c;
+  transform: scale(1.05);
+}
+
+
+  </style>
+
+  <script is:inline>
+
+const questions = [
+  {
+    clue: "Napoleón invade España y el rey Fernando VII pierde su trono 👑. ¿Qué paso es este?",
+    options: ["Paso 1", "Paso 3", "Paso 5"],
+    answer: "Paso 1"
+  },
+  {
+    clue: "En Buenos Aires la gente empieza a preguntarse si el virrey sigue teniendo poder 🤔. ¿Qué paso es este?",
+    options: ["Paso 2", "Paso 4", "Paso 6"],
+    answer: "Paso 2"
+  },
+  {
+    clue: "El 22 de mayo muchas personas se juntan para decidir qué hacer 🤝. ¿Qué paso es este?",
+    options: ["Paso 3", "Paso 7", "Paso 9"],
+    answer: "Paso 3"
+  },
+  {
+    clue: "Se debate si el virrey Cisneros debe seguir o no como jefe 🧐. ¿Qué paso es este?",
+    options: ["Paso 4", "Paso 6", "Paso 8"],
+    answer: "Paso 4"
+  },
+  {
+    clue: "Se forma una junta con el virrey, pero el pueblo no la acepta ❌. ¿Qué paso es este?",
+    options: ["Paso 5", "Paso 7", "Paso 9"],
+    answer: "Paso 5"
+  },
+  {
+    clue: "El 25 de mayo, Cisneros tiene que renunciar y dejar su cargo 👋. ¿Qué paso es este?",
+    options: ["Paso 6", "Paso 2", "Paso 8"],
+    answer: "Paso 6"
+  },
+  {
+    clue: "Ese mismo día se forma un nuevo gobierno con Saavedra y otros vecinos 💼. ¿Qué paso es este?",
+    options: ["Paso 7", "Paso 5", "Paso 9"],
+    answer: "Paso 7"
+  },
+  {
+    clue: "Comienza la gran lucha para ser libres de España 💪. ¿Qué paso es este?",
+    options: ["Paso 8", "Paso 6", "Paso 2"],
+    answer: "Paso 8"
+  },
+  {
+    clue: "La noticia de la revolución llega a otras ciudades del virreinato 🚀. ¿Qué paso es este?",
+    options: ["Paso 9", "Paso 3", "Paso 7"],
+    answer: "Paso 9"
+  }
+];
+
+
+    let current = 0;
+    let score = 0;
+  
+    function questionEl() { return document.getElementById("question"); }
+    function optionsEl() { return document.getElementById("options"); }
+    function feedbackEl() { return document.getElementById("feedback"); }
+    function nextBtn() { return document.getElementById("next-btn"); }
+    function scoreEl() { return document.getElementById("score"); }
+    function lastScoreEl() { return document.getElementById("lastScore"); }
+  
+    function showQuestion() {
+      feedbackEl().textContent = "";
+      nextBtn().style.display = "none";
+      const q = questions[current];
+      questionEl().textContent = q.clue;
+  
+      optionsEl().innerHTML = "";
+      q.options.forEach(option => {
+        const btn = document.createElement("button");
+        btn.textContent = option;
+        btn.className = "game__btn-option"; // 👈 asegurate de usar esta clase
+        btn.onclick = () => checkAnswer(option);
+        optionsEl().appendChild(btn);
+      });
+    }
+  
+    function checkAnswer(selected) {
+      const correct = questions[current].answer;
+      if (selected === correct) {
+        feedbackEl().textContent = "✅ ¡Correcto!";
+        feedbackEl().style.color = "green";
+        score++;
+        scoreEl().textContent = "Puntaje actual: " + score;
+      } else {
+        feedbackEl().textContent = "❌ Incorrecto. Era " + correct + ".";
+        feedbackEl().style.color = "red";
+      }
+  
+      Array.from(optionsEl().children).forEach(btn => btn.disabled = true);
+      nextBtn().style.display = "inline-block";
+    }
+  
+    function nextQuestion() {
+      current++;
+      if (current < questions.length) {
+        showQuestion();
+      } else {
+        questionEl().textContent = "🎉 ¡Juego terminado!";
+        optionsEl().innerHTML = "";
+        feedbackEl().textContent = `Tu puntaje final es ${score} de ${questions.length}`;
+        nextBtn().style.display = "none";
+        saveScore();
+      }
+    }
+  
+    function saveScore() {
+      localStorage.setItem("puntaje-argenpedia", score);
+    }
+  
+    function showLastScore() {
+      const last = localStorage.getItem("puntaje-argenpedia");
+      if (last !== null) {
+        lastScoreEl().textContent = `Último puntaje guardado: ${last}`;
+      }
+    }
+  
+    window.onload = () => {
+      showQuestion();
+      showLastScore();
+    };
+  </script>
+  
+  
 </Layout>
