@@ -140,7 +140,7 @@ import Carousel1 from '@components/Carousel1.astro';
 
 
   
-  <style>
+  <style is:global>
     body {
       background-color: #ce8372;
       margin: 0;
@@ -267,8 +267,9 @@ import Carousel1 from '@components/Carousel1.astro';
   color: #fdfdfd;
 }
 
+
 .game {
-  background-color: #ab4633;
+  background-color: #973724;
   text-align: center;
   padding: 2rem;
 }
@@ -298,7 +299,7 @@ import Carousel1 from '@components/Carousel1.astro';
 }
 
 .game__card {
-  background:  #ce8372;
+  background:  #d96a5c;
   padding: 1.5rem;
   margin: 2rem auto;
   border-radius: 12px;
@@ -312,38 +313,52 @@ import Carousel1 from '@components/Carousel1.astro';
   margin-bottom: 1rem;
 }
 
-.game__options button {
-  background: #fefae0;
-  color: #264653;
-  font-size: 16px;
+/* Botones de opciones */
+.game__btn-option {
+  display: block;
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
   border: none;
-  padding: 0.7rem 1.5rem;
-  margin: 0.5rem;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.game__options button:hover {
-  background: #2a9d8f;
+  border-radius: 8px;
+  background-color: #a42929;
   color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
-.game__feedback {
-  font-weight: bold;
-  margin-top: 1rem;
+.game__btn-option:hover:not(:disabled) {
+  background-color: #c35a42;
+  transform: scale(1.03);
 }
 
+.game__btn-option:disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
+
+/* Botón de "Siguiente" */
 .game__btn {
-  display: none;
-  margin-top: 1.5rem;
-  background: 
-  color: white;
-  padding: 0.7rem 1.5rem;
+  margin-top: 1rem;
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+  font-weight: bold;
   border: none;
-  border-radius: 10px;
+  border-radius: 8px;
+  background-color: #1a009c;
+  color: #fff;
   cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
 }
+
+.game__btn:hover {
+  background-color: #3155a2;
+  transform: scale(1.05);
+}
+
 
 /* Tablet: 2 columnas */
 @media (min-width: 600px) {
@@ -388,75 +403,76 @@ import Carousel1 from '@components/Carousel1.astro';
   ];
 
   let current = 0;
-  let score = 0;
-
-  function questionEl() { return document.getElementById("question"); }
-  function optionsEl() { return document.getElementById("options"); }
-  function feedbackEl() { return document.getElementById("feedback"); }
-  function nextBtn() { return document.getElementById("next-btn"); }
-  function scoreEl() { return document.getElementById("score"); }
-  function lastScoreEl() { return document.getElementById("lastScore"); }
-
-  function showQuestion() {
-    feedbackEl().textContent = "";
-    nextBtn().style.display = "none";
-    const q = questions[current];
-    questionEl().textContent = q.clue;
-
-    optionsEl().innerHTML = "";
-    q.options.forEach(option => {
-      const btn = document.createElement("button");
-      btn.textContent = option;
-      btn.onclick = () => checkAnswer(option);
-      optionsEl().appendChild(btn);
-    });
-  }
-
-  function checkAnswer(selected) {
-    const correct = questions[current].answer;
-    if (selected === correct) {
-      feedbackEl().textContent = "✅ ¡Correcto!";
-      feedbackEl().style.color = "green";
-      score++;
-      scoreEl().textContent = "Puntaje actual: " + score;
-    } else {
-      feedbackEl().textContent = "❌ Incorrecto. Era " + correct + ".";
-      feedbackEl().style.color = "red";
-    }
-
-    Array.from(optionsEl().children).forEach(btn => btn.disabled = true);
-    nextBtn().style.display = "inline-block";
-  }
-
-  function nextQuestion() {
-    current++;
-    if (current < questions.length) {
-      showQuestion();
-    } else {
-      questionEl().textContent = "🎉 ¡Juego terminado!";
-      optionsEl().innerHTML = "";
-      feedbackEl().textContent = `Tu puntaje final es ${score} de ${questions.length}`;
+    let score = 0;
+  
+    function questionEl() { return document.getElementById("question"); }
+    function optionsEl() { return document.getElementById("options"); }
+    function feedbackEl() { return document.getElementById("feedback"); }
+    function nextBtn() { return document.getElementById("next-btn"); }
+    function scoreEl() { return document.getElementById("score"); }
+    function lastScoreEl() { return document.getElementById("lastScore"); }
+  
+    function showQuestion() {
+      feedbackEl().textContent = "";
       nextBtn().style.display = "none";
-      saveScore();
+      const q = questions[current];
+      questionEl().textContent = q.clue;
+  
+      optionsEl().innerHTML = "";
+      q.options.forEach(option => {
+        const btn = document.createElement("button");
+        btn.textContent = option;
+        btn.className = "game__btn-option"; // 👈 asegurate de usar esta clase
+        btn.onclick = () => checkAnswer(option);
+        optionsEl().appendChild(btn);
+      });
     }
-  }
-
-  function saveScore() {
-    localStorage.setItem("puntaje-argenpedia", score);
-  }
-
-  function showLastScore() {
-    const last = localStorage.getItem("puntaje-argenpedia");
-    if (last !== null) {
-      lastScoreEl().textContent = `Último puntaje guardado: ${last}`;
+  
+    function checkAnswer(selected) {
+      const correct = questions[current].answer;
+      if (selected === correct) {
+        feedbackEl().textContent = "✅ ¡Correcto!";
+        feedbackEl().style.color = "green";
+        score++;
+        scoreEl().textContent = "Puntaje actual: " + score;
+      } else {
+        feedbackEl().textContent = "❌ Incorrecto. Era " + correct + ".";
+        feedbackEl().style.color = "red";
+      }
+  
+      Array.from(optionsEl().children).forEach(btn => btn.disabled = true);
+      nextBtn().style.display = "inline-block";
     }
-  }
-
-  window.onload = () => {
-    showQuestion();
-    showLastScore();
-  };
-</script>
+  
+    function nextQuestion() {
+      current++;
+      if (current < questions.length) {
+        showQuestion();
+      } else {
+        questionEl().textContent = "🎉 ¡Juego terminado!";
+        optionsEl().innerHTML = "";
+        feedbackEl().textContent = `Tu puntaje final es ${score} de ${questions.length}`;
+        nextBtn().style.display = "none";
+        saveScore();
+      }
+    }
+  
+    function saveScore() {
+      localStorage.setItem("puntaje-argenpedia", score);
+    }
+  
+    function showLastScore() {
+      const last = localStorage.getItem("puntaje-argenpedia");
+      if (last !== null) {
+        lastScoreEl().textContent = `Último puntaje guardado: ${last}`;
+      }
+    }
+  
+    window.onload = () => {
+      showQuestion();
+      showLastScore();
+    };
+  </script>
 
   
 
